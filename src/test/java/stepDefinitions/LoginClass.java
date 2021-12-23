@@ -11,8 +11,8 @@ public class LoginClass {
 		this.driver=driver;
 	}
 	public void Login() {
-		driver.findElement(By.name("email_id")).sendKeys("veda5@domain.com");
-		driver.findElement(By.name("pwd")).sendKeys("password");
+		driver.findElement(By.name("email_id")).sendKeys("rohitraj@gmail.com");
+		driver.findElement(By.name("pwd")).sendKeys("123456789");
 	    System.out.println("user opened login page and enter details");
 	    driver.findElement(By.xpath("//button[text()='Login']")).click();
 	    System.out.println("user clicks on login button");

@@ -17,10 +17,10 @@ public class SignupClass {
 		System.out.println("user has opened login page");
 		driver.findElement(By.xpath("//a[text()='Not a member? Signup']")).click();
 	    System.out.println("user opts to register");
-	    driver.findElement(By.name("email_id")).sendKeys("veda5@domain.com");
-		driver.findElement(By.name("pwd")).sendKeys("password");
-		driver.findElement(By.name("pwd2")).sendKeys("password");
-		driver.findElement(By.name("name")).sendKeys("veda5");
+	    driver.findElement(By.name("email_id")).sendKeys("rohitraj@gmail.com");
+		driver.findElement(By.name("pwd")).sendKeys("123456789");
+		driver.findElement(By.name("pwd2")).sendKeys("123456789");
+		driver.findElement(By.name("name")).sendKeys("rohitraj");
 		System.out.println("user enters details required");
 		driver.findElement(By.xpath("//button[text()='Signup']")).click();
 		driver.findElement(By.xpath("//a[text()='Already a member? Login']")).click();

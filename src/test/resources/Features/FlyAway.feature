@@ -33,8 +33,7 @@ Feature: FlyAway Ticket Booking
     Given user has opened login page 
     And user opts to register
     When user enters details required
-     |Email id         | |Password| |Confirm Password| |Name|
-     |veda5@domain.com | |password| |password        | |veda5|
+     
     Then user registered successfully
     
     @tag1

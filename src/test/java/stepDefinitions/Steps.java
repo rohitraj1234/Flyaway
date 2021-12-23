@@ -23,10 +23,10 @@ public class Steps {
 	@Given("user has opened Application")
 	public void user_has_opened_application() {
 	    // Write code here that turns the phrase above into concrete actions
-		System.setProperty("webdriver.chrome.driver", "C:\\installables\\chromedriver_win32_96\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\installables\\chromedriver_win32 (1)\\chromedriver.exe");
 //	     WebDriver driver;
 		driver = new ChromeDriver();
-		driver.get("http://localhost:9090/FlyAway/");
+		driver.get("http://localhost:8080/FlyAway/");
 		driver.manage().window().maximize();
 	    System.out.println("user has opened Application");
 	}
@@ -61,7 +61,7 @@ public class Steps {
 //	    System.out.println("user opts to register");
 	}
 	@When("user enters details required")
-	public void user_enters_details_required(io.cucumber.datatable.DataTable dataTable) {
+	public void user_enters_details_required() {
 	    // Write code here that turns the phrase above into concrete actions
 	    // For automatic transformation, change DataTable to one of
 	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
@@ -70,16 +70,12 @@ public class Steps {
 	    //
 	    // For other transformations you can register a DataTableType.
 		
-		List<List<String>> lstprods = dataTable.asLists();
-		for (List<String> prod : lstprods) {
-			System.out.println(prod.get(0)+" "+prod.get(1)+" "+prod.get(2)+" "+prod.get(3));
-			
-		}
+		
 
-//		driver.findElement(By.name("email_id")).sendKeys("veda5@domain.com");
-//		driver.findElement(By.name("pwd")).sendKeys("password");
-//		driver.findElement(By.name("pwd2")).sendKeys("password");
-//		driver.findElement(By.name("name")).sendKeys("veda5");
+//		driver.findElement(By.name("email_id")).sendKeys("rohitraj@gmail.com");
+//		driver.findElement(By.name("pwd")).sendKeys("123456789");
+//		driver.findElement(By.name("pwd2")).sendKeys("123456789");
+//		driver.findElement(By.name("name")).sendKeys("rohitraj");
 //		System.out.println("user enters details required");
 	}
 	@Then("user registered successfully")
